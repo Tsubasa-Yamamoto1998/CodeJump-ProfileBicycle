@@ -1,0 +1,153 @@
+/*  */
+/* index.html */
+/*  */
+
+/* common */
+
+.wrapper {
+  width: 100%;
+}
+
+/* header */
+
+.l-header {
+  max-width: 960px;
+  height: 60px;
+  padding: 0 35px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.l-header__image {
+  width: 120px;
+}
+.l-header__nav {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+}
+.l-header__item {
+  text-decoration: none;
+  font-size: 14.4px;
+  color: black;
+}
+.l-header__item:hover {
+  opacity: 0.7;
+}
+
+/* hero */
+
+.l-hero {
+  background-image: url(./images/mainvisual.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+/* main */
+
+.l-main {
+  max-width: 960px;
+  margin: 80px auto 0 auto;
+}
+
+/* about */
+
+.c-sectionTitle {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 15px;
+  line-height: 49px;
+}
+.p-about__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.p-about__img {
+  width: 100px;
+  border-radius: 50px;
+}
+.c-textTitle {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.p-about__text {
+  font-size: 14.4px;
+  line-height: 21px;
+  width: 404px;
+}
+
+/* bicycle */
+
+.p-bicycle {
+  margin-top: 100px;
+}
+.p-bicycle__contents {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.p-bicycle__content {
+  width: 32%;
+  text-align: center;
+}
+.p-bicycle__img {
+  width: 100%;
+}
+.p-bicycle__text {
+  font-size: 14.4px;
+  line-height: 21px;
+}
+
+/* footer */
+
+.l-footer__copyright {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 8px;
+  line-height: 32px;
+}
+
+/* mediaquery */
+
+@media screen and (min-width: 601px) {
+
+  .l-main {
+    padding: 0 4%;
+  }
+  .p-about__textBox {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .l-hero {
+    height: calc(100vh - 60px);
+  }
+  .p-about__content {
+    flex-direction: column;
+  }
+  .p-bicycle__contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  .p-bicycle__content {
+    width: 90%;
+  }
+  .p-bicycle__content:not(:first-child) {
+    margin-top: 30px;
+  }
+  .l-footer {
+    margin-top: 130px;
+  }
+  
+}
+
+
